@@ -5,12 +5,14 @@
 `node index.js --action list`
 
 [list option](https://ibb.co/sVnDvbg)
+<a href="https://ibb.co/sVnDvbg"><img src="https://i.ibb.co/FD2fbmh/80.png" alt="80" border="0" /></a>
 
 ## Получаем контакт по id
 
 `node index.js --action get --id 5`
 
-![get option](https://ibb.co/k2N0Cq1)
+![get option]
+(https://ibb.co/k2N0Cq1)
 
 ## Добавялем контакт
 
