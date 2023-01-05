@@ -11,7 +11,7 @@ const readContactsFile = async () => {
 
 const listContacts = async () => {
   const parsedContacts = await readContactsFile();
-  // console.table(parsedContacts);
+  //   console.table(parsedContacts);
   return parsedContacts;
 };
 
@@ -30,7 +30,8 @@ const removeContact = async (contactId) => {
     (contact) => contact.id !== String(contactId)
   );
   await fs.writeFile(contactPath, JSON.stringify(filteredContact, null, 2));
-  console.table(filteredContact);
+  //   console.table(filteredContact);
+  return await readContactsFile();
 };
 
 const addContact = async (name, email, phone) => {
@@ -39,7 +40,8 @@ const addContact = async (name, email, phone) => {
   const newContact = { id, name, email, phone };
   parsedContacts.push(newContact);
   await fs.writeFile(contactPath, JSON.stringify(parsedContacts, null, 2));
-  console.table(parsedContacts);
+  // console.table(parsedContacts);
+  return await readContactsFile();
 };
 
 module.exports = {
