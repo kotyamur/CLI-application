@@ -4,7 +4,7 @@
 
 `node index.js --action list`
 
-![list option](https://ibb.co/sVnDvbg)
+[list option](https://ibb.co/sVnDvbg)
 
 ## Получаем контакт по id
 
