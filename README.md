@@ -28,6 +28,6 @@
 
 `node index.js --action remove --id=3`
 
-![remove option](https://ibb.co/VgBczmY)
+![remove option](https://i.ibb.co/ZBTpFmz/84.png)
 
 <a href="https://ibb.co/VgBczmY"><img src="https://i.ibb.co/ZBTpFmz/84.png" alt="84" border="0" /></a>
