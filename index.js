@@ -6,17 +6,6 @@ const {
   removeContact,
 } = require("./contacts");
 
-async function test() {
-  console.log("hello world");
-  //   console.log(await listContacts());
-  //   console.table(await listContacts());
-  //   console.log(await getContactById(6));
-  //   await removeContact("7FF4JRiStpSjfEjtUa_MV");
-  // await addContact("ddgg", "sdf", "dfgg");
-  //   console.table(await removeContact("2inGOQnOochze-V4Y9H58"));
-}
-test();
-
 const program = new Command();
 
 program
@@ -51,8 +40,9 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
       break;
 
     case "remove":
-      console.log("invoke remove contact");
-      await removeContact(id);
+      const clearContacts = await removeContact(id);
+      console.log(id);
+      console.table(clearContacts);
       break;
 
     default:
